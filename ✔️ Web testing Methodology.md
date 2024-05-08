@@ -83,6 +83,7 @@ This is a collection of checklists and cheat-sheet style data for web applicatio
 ### Login basics
 - [ ] Login request has HTTPS enforced
 - [ ] Rate limiting
+- [ ] User account lockout mechanism on brute force attack
 - [ ] User enumeration
 	- Response size
 	- Response code
@@ -273,7 +274,7 @@ This is a collection of checklists and cheat-sheet style data for web applicatio
 	- which field is accepted
 	- errors with sensitive information
 
-## Authorisation controls
+## Authorization controls
 - [ ] IDOR to objects belonging to current user
 - [ ] changing user ID on requests
 - [ ] Parameter pollution with user ID
@@ -301,6 +302,18 @@ This is a collection of checklists and cheat-sheet style data for web applicatio
 	- [JWT attacks](https://pentestbook.six2dez.com/enumeration/webservices/jwt)
 	- https://token.dev/ might derive private key that works
 
+---
+## Headers
+
+- [ ]  X-XSS-Protection
+- [ ]  Strict-Transport-Security
+- [ ]  Content-Security-Policy
+- [ ]  Public-Key-Pins
+- [ ]  X-Frame-Options
+- [ ]  X-Content-Type-Options
+- [ ]  Referer-Policy
+- [ ]  Cache-Control
+- [ ]  Expires
 ---
 
 ## Data validation and injection
